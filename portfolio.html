@@ -21,25 +21,26 @@
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <!-- github -->
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-        <!-- <i class="devicon-github-plain"></i> -->
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <!-- git -->
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <!-- aws -->
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
+        <!-- mocha -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
         <link rel="stylesheet" href="styles/portfolio.css"> 
    </head>
    <body>
         <header class="nav-wrapper">
-            <nav class="home-text">Home</nav>
+            <nav class="home-text">Liz Aitken</nav>
             <ul class="nav-other-text">
-                <li class="nav-text">About</li>
-                <li class="nav-text">Projects</li>
-                <li class="nav-text">Skills</li>
-                <li class="nav-text">Contact</li>
+                <a class="nav-link" href="#about" target="_self"><li class="nav-text">About</li></a>
+                <a class="nav-link" href="#projects" target="_self"><li class="nav-text">Projects</li></a>
+                </a>
+                <a class="nav-link" href="#skills" target="_self"><li class="nav-text">Skills</li></a>
+                <a class="nav-link" href="#contact" target="_self"><li class="nav-text">Contact</li></a>
             </ul>
         </header>
         <main class="body-wrapper">
@@ -55,7 +56,7 @@
                 </div>
             </section>
             <section class="projects-sec">
-                <h2 class="projects-title">Projects</h2>
+                <h2 class="projects-title" id="projects">Projects</h2>
                 <div class="first-project-wrap">
                     <figure class="first-project-photo-wrap">
                         <img class="first-project-photo" src="images/scp_photo.png">
@@ -97,12 +98,13 @@
                 </div>
             </section>
             <section class="skills-sec">
-                    <h2 class="skills-title">Software Development Skills</h2>
+                    <h2 id="skills" class="skills-title">Software Development Skills</h2>
                     <div class="skills-one-wrap">
                         <i class="devicon-javascript-plain"></i>
                         <i class="devicon-html5-plain"></i>
                         <i class="devicon-postgresql-plain"></i>
                         <i class="devicon-express-original"></i>
+                        <i class="devicon-mocha-plain"></i>
                     </div>
                     <div class="skills-two-wrap">
                         <i class="devicon-nodejs-plain-wordmark"></i>
@@ -113,10 +115,28 @@
                     </div>
             </section>
             <section class="about-sec">
-                    <h2 class="about-title">About Me</h2>
+                    <h2 class="about-title"></h2><a id="about"></a>About Me</h2>
+                    <div class="about-wrap">
+                        <figure class="about-photo-wrap">
+                            <img class="about-photo" src="images/profile.jpg">
+                        </figure>
+                        <p class="about-text">Hello there! This is a bunch of writing about myself. Blah, lorem ipsum bacon blah. Lorem lorem ipsum blah blah. Lorem blah de dah. More stuff about me. Stuff I did, want to do. Lorem ipsum, blah blah de dagh.Lorem blah de dah. More stuff about me. Stuff I did, want to do. Lorem ipsum, blah blah de dagh.Lorem blah de dah. More stuff about me. Stuff I did, want to do. Lorem ipsum, blah blah de dagh.</p>
+                    </div>
             </section>
             <section class="contact-sec">
-                <h2 class="contact-title">Contact Me</h2>
+                <h2 id="contact" class="contact-title">Contact Me</h2>
+                <div class="contact-icons">
+                    <a href="https://github.com/LizAitken"><i class="devicon-github-plain"></i></a>
+                    <figure class="linkedin-icon-wrap">
+                            <a href ="https://www.linkedin.com/in/liz-aitken-9a1770a7/"><img class="linkedin-icon" src="images/008-linkedin.png"/></a>
+                    </figure>
+                    <figure class="email-icon-wrap">
+                            <a href="mailto:liz.a.aitken@gmail.com"><img class="email-icon" src="images/009-mail.png"/></a>
+                    </figure> 
+                    <figure class="resume-icon-wrap">
+                            <a href="images/liz_aitken_resume_1.25.19.pdf"><img class="resume-icon" src="images/professional-profile-with-image.png"/></a>
+                    </figure> 
+                </div>
             </section>
         </main>
         <footer class="footer-nav">
