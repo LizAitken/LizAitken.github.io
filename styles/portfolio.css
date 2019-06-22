@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     /* height: 100vh; */
-    height: calc(100vh - 1rem);
+    height: calc(200vh - 1rem);
 }
   
 .nav-wrapper {
@@ -56,18 +56,70 @@ body {
 
 
 .intro-photo {
-    height: 10rem;
-    width: 10rem;
+    height: 22rem;
+    width: 22rem;
+}
+
+.title-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .projects-sec {
     background-color: lightskyblue;
-    height: 30rem;    
+    /* height: 30rem;     */
+}
+
+.first-project-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.first-project-photo {
+    height: 17rem;
+    width: 24rem;
+}
+
+.second-project-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.second-project-photo {
+    height: 19rem;
+    width: 18rem;
+}
+
+.third-project-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.third-project-photo {
+    height: 17rem;
+    width: 24rem;
 }
 
 .skills-sec {
     background-color: grey;
-    height: 30rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 30rem;  */
+}
+
+.devicon-javascript-plain, .devicon-html5-plain, .devicon-postgresql-plain, .devicon-express-original, .devicon-nodejs-plain-wordmark, .devicon-linux-plain, .devicon-bootstrap-plain, .devicon-git-plain, .devicon-amazonwebservices-original {
+    font-size: 3rem;
+}
+
+.about-sec {
+    background-color: lightgoldenrodyellow;
+    height: 30rem;
 }
 
 .contact-sec {
@@ -80,7 +132,7 @@ body {
 
 /* Footer*/
 .footer-nav {
-    margin: 1.6rem;
+    margin: 1rem;
     flex-shrink: 0;
 }
 
