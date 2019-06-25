@@ -14,7 +14,8 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
-    font-family: 'Vollkorn SC'; 
+    font-family: 'Amatic SC'; 
+    background-color:#C3C4C3;
 }
 
 .body-wrapper{
@@ -24,7 +25,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     /* height: 100vh; */
-    height: calc(350vh - 1rem);
+    height: calc(460vh - 1rem);
 }
   
 .nav-wrapper {
@@ -33,11 +34,12 @@ body {
     display: flex;
     justify-content: space-between;
     /* margin: 1rem; */
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: -webkit-sticky;
+    position: sticky; */
     top: 0;
-    background: linear-gradient(grey, white);
+    background: linear-gradient(grey, transparent);
 }
+
 
 .nav-other-text {
       margin: 0;
@@ -48,14 +50,15 @@ body {
 }
 
 .home-text {
-    font-size: 1.4rem;
+    font-size: 3rem;
     font-weight: bold;
     letter-spacing: .25rem;
 }
 
 .nav-text {
     padding: 0 1rem;
-    font-size: 1.1rem;
+    font-size: 2rem;
+    letter-spacing: .25rem;
 }
 
 .nav-link {
@@ -64,26 +67,34 @@ body {
 }
 .nav-text:hover, .home-text:hover {
     opacity: .5;
-}
+    background-color: #4FB3B3;
+} 
 
 .main-intro-sec {
-    /* background-color: peachpuff; */
-    margin: 10rem 0 4rem 0;
+    background: url(../images/edan-cohen-Imo0mgQsIsQ-unsplash.jpg);
+    /* margin: 5rem 0 4rem 0; */
+    /* -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 81%, 0 200%);
+    clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);   */
+    background-size: cover;
+    background-position: bottom; 
+    margin: 0 0 2rem 0;
 }
 
 .intro-wrap {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    margin: 1rem 1rem 1rem 4rem;
+    /* justify-content: center; */
 }
 
 
 .intro-photo {
-    height: 23rem;
-    width: 23rem;
+    height: 25rem;
+    width: 25rem;
     padding: .2rem;
-    border-radius: 50%;
-    border: 2px black solid;
+    /* border-radius: 50%;
+    border: 2px black solid; */
+    z-index: 3;
 }
 
 .title-wrap {
@@ -94,19 +105,23 @@ body {
 
 .main-title-name {
     /* animation: slide-left 3s; */
-    font-size: 3.2rem;
+    font-size: 3.6rem;
     margin: 0;
-    padding: 0;
+    padding: .5;
+    font-family: 'Rock Salt';
+    font-weight: bold;
+
 }
 
 #liz {
     animation: slide-up 3s;
+    color: peachpuff;
 
 }
 
 #aitken {
     animation: slide-left 3s;
-    background-color: lightskyblue;
+    background-color: #4FB3B3;
 }
 
 @keyframes slide-left {
@@ -128,15 +143,20 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3rem 0;
+    padding: 5rem 0;
+    /* margin: 2rem 0; */
+    /* -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 100%, 0 82%);
+    clip-path: polygon(0 0, 1600px 0, 1600px 82%, 0 100%); */
+    font-family: 'Poppins';
+    
 }
 
-.projects-title {
+.projects-title, .skills-title {
     font-size: 2.2rem;
     text-transform: lowercase;
     font-weight: bold;
-    text-decoration: underline;
     letter-spacing: .25rem;
+    font-family: 'Amatic SC';
 }
 
 .all-project-title {
@@ -185,37 +205,63 @@ body {
 }
 
 .skills-sec {
-    background-color: grey;
+    /* background-color: grey; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 5rem 0;
     /* height: 30rem;  */
 }
 
+
+
 .devicon-javascript-plain, .devicon-html5-plain, .devicon-postgresql-plain, .devicon-express-original, .devicon-nodejs-plain-wordmark, .devicon-linux-plain, .devicon-bootstrap-plain, .devicon-git-plain, .devicon-amazonwebservices-original, .devicon-mocha-plain {
-    font-size: 3rem;
+    font-size: 5rem;
+    padding: 1.3rem;
+}
+
+.skills-one-wrap {
+    margin: 2rem;
 }
 
 .about-sec {
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(206, 181, 150);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins';
+    padding: 5rem 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 .about-wrap {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 80%;
+    /* border: 1rem solid black; */
+    border-radius: 10px;
 }
 
 .about-photo {
     width: 15rem;
     height: 15rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.about-text {
+   text-align: center;
+   font-size: 1.2rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 .contact-sec {
@@ -230,17 +276,37 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    margin: 1.4rem;
 }
 
 .devicon-github-plain {
     font-size: 6rem;
     padding: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.git-link {
+    text-decoration: none;
 }
 
 .linkedin-icon, .email-icon, .resume-icon {
     width: 7rem;
     height: 7rem;
     padding: 1rem;
+}
+
+.devicon-github-plain:hover, .linkedin-icon:hover, .email-icon:hover, .resume-icon:hover {
+    opacity: .5;
+}
+
+#about, #projects, #skills, #contact {
+    font-size: 2.6rem;
+    text-transform: lowercase;
+    font-weight: bolder;
+    letter-spacing: .25rem;
+    font-family: 'Amatic SC';
 }
 
 /* Footer*/
@@ -253,3 +319,4 @@ body {
     font-size: 1rem;
     color: black;
 }
+
