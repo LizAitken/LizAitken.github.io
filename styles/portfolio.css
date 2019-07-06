@@ -30,7 +30,7 @@ body {
   
 .nav-wrapper {
     margin: 0;
-    padding: .3rem;
+    padding: .2rem;
     display: flex;
     justify-content: space-between;
     /* margin: 1rem;  */
@@ -362,7 +362,7 @@ body {
 }
 
 .about-sec {
-    background-color: rgb(206, 181, 150);
+    background-color: rgb(213, 195, 174);
     display: flex;
     flex-direction: column;
     justify-content: center;
