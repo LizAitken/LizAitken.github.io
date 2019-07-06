@@ -5,7 +5,7 @@
 html {
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    /* min-height: 100%; */
 }
   
 body {
@@ -25,7 +25,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     /* height: 100vh; */
-    height: calc(460vh - 1rem);
+    /* height: calc(400vh - 1rem); */
 }
   
 .nav-wrapper {
@@ -37,7 +37,7 @@ body {
     /* position: -webkit-sticky;
     position: sticky; */
     top: 0;
-    background: linear-gradient(grey, transparent);
+    background: linear-gradient(white, transparent);
 }
 
 
@@ -76,7 +76,7 @@ body {
     /* -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 81%, 0 200%);
     clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);   */
     background-size: cover;
-    background-position: bottom; 
+    background-position: bottom left; 
     margin: 0 0 2rem 0;
 }
 
@@ -177,7 +177,7 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     cursor: pointer;
     height: 400px;
-    margin: 20px;
+    margin: 0 20px;
     /* padding: 0 20px; */
     position: relative;
     -webkit-tap-highlight-color: rgba(0,0,0,0.025);
@@ -198,7 +198,30 @@ body {
 }
 
 .card.expanded {
-    height: 520px;
+    height: 560px;
+}
+
+.first-project-title {
+    margin: 33px 0 0 0;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.second-project-title {
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.text1 {
+    clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+    -webkit-clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+    transition: clip-path 1000ms;
+}
+
+.card.expanded .text1 {
+    clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
+    -webkit-clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
 }
 
 .arrow {
@@ -208,10 +231,14 @@ body {
     transform-origin: 50%;
     transform: rotate(180deg);
     transition: transform 1000ms;
-  }
+}
 
 .card.expanded .arrow {
     transform: rotate(0deg);
+}
+
+.arrow:hover {
+    color: red;
 }
 
 .first-project-wrap {
@@ -221,11 +248,23 @@ body {
 }
 
 .first-project-photo {
-    margin: 35px 0 0 0;
+    margin: 50px 0 0 0;
     padding:0;
     height: 200px;
     width: 330px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 } 
+
+
+.extend-wrap {
+    padding: 10px;
+    font-size: 16px;
+    display: none;
+}
+
+.card.expanded .extend-wrap {
+    display: block;
+}
 
 .second-project-wrap {
     display: flex;
@@ -234,10 +273,11 @@ body {
 }
 
 .second-project-photo {
-    margin: 25px 0 0 0;
+    margin: 20px 0 0 0;
     padding: 0;
-    height: 300px;
+    height: 290px;
     width: 240px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .third-project-wrap {
@@ -247,31 +287,56 @@ body {
 }
 
 .third-project-photo {
-    margin: 35px 0 0 0;
+    margin: 50px 0 0 0;
     padding:0;
     height: 200px;
     width: 330px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .skills-sec {
-    /* background-color: grey; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5rem 0;
+    /* margin: 2rem 0; */
     /* height: 30rem;  */
 }
 
+.all-skills-wrap {
+    border-radius: 8px;
+    background-color: rgb(250, 241, 206);
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 4rem 0;
+}
 
-
-.devicon-javascript-plain, .devicon-html5-plain, .devicon-postgresql-plain, .devicon-express-original, .devicon-nodejs-plain-wordmark, .devicon-linux-plain, .devicon-bootstrap-plain, .devicon-git-plain, .devicon-amazonwebservices-original, .devicon-mocha-plain {
+.devicon-python-plain, .devicon-css3-plain, .devicon-javascript-plain, .devicon-html5-plain, .devicon-postgresql-plain, .devicon-express-original, .devicon-nodejs-plain-wordmark, .devicon-linux-plain, .devicon-bootstrap-plain, .devicon-git-plain, .devicon-amazonwebservices-original, .devicon-mocha-plain {
     font-size: 5rem;
     padding: 1.3rem;
 }
 
+#js-icon, #css-icon, #html-icon, #postgresql-icon, #express-icon, #python-icon {
+    font-size: 2rem;
+    padding: .5rem;
+}
+
 .skills-one-wrap {
     margin: 2rem;
+}
+
+.skills-two-wrap {
+    padding: 0 0 5rem 0;
+}
+
+.project-link-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: .5rem;
 }
 
 .about-sec {

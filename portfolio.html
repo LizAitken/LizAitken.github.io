@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width">
         <title>Liz Aitken</title>
         <base target="_blank">
+        <!-- python icon -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <!-- CSS icon -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <!-- javascript icon -->
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <!-- html icon -->
@@ -65,13 +69,10 @@
                 </div>
             </section>
             <section class="about-sec">
-                    <a class="about-title"><a id="about">I'm Liz.</h2></a>
+                    <h2 class="about-title"><a id="about">I'm Liz.</h2></a>
                     <div class="about-wrap">
-                        <!-- <figure class="about-photo-wrap">
-                            <img class="about-photo" src="images/profile.jpg">
-                        </figure> -->
                         <p class="about-text">I love creating and building things. The problem-solving process of creation drew me towards the fine arts and has now drawn me to software development. While designing a website for my artwork, I desired to go a bit further and do something outside of the template I was working in. Through that desire, I was introduced to a bit of HTML, CSS, and JavaScript. After that, the world of software development opened up and I climbed down the rabbit hole.</p>
-                        <p class="about-text">When I am not exploring the vast universe of software development, I am probably painting or adventuring the great outdoors with my husband and my pup in Atlanta, GA.</p>
+                        <p class="about-text">When I am not exploring the vast universe of software development, I am probably painting or adventuring the great outdoors with my husband and my pup. Feel free to check out my artist website as well, <a href="https://www.lizaitkenart.com/">www.lizaitkenart.com</a>.</p>
                         <hr>
                     </div>
             </section>
@@ -79,76 +80,75 @@
                 <h2 class="projects-title" id="projects">Here are a few of my projects...</h2>
                 <div class="first-project-wrap">
                         <div class="card" onclick="this.classList.toggle('expanded')">
-                            <!-- <figure class="first-project-photo-wrap"> -->
                             <img class="first-project-photo" src="images/scp_photo.png" />
-                            <p>Sponsored Children Project App</p>
+                            <h1 class="first-project-title">Sponsored Children Project App</h1>
+                            <div class="extend-wrap">
+                                <p class="project-paragraph">Application created in order to optimize the organization of a non-profit that aids kids with school supplies.</p>
+                                <div class="project-link-wrap">
+                                    <p class="project-link"><a href="https://github.com/LizAitken/nonprofit-organization-app">GitHub</a></p>
+                                    <p class="project-link">Live Site</p>
+                                </div>
+                                <div class="project-icons">
+                                    <i id="js-icon" class="devicon-javascript-plain"></i>
+                                    <i id="css-icon" class="devicon-css3-plain"></i>
+                                    <i id="html-icon" class="devicon-html5-plain"></i>
+                                    <i id="postgresql-icon" class="devicon-postgresql-plain"></i>
+                                    <i id="express-icon" class="devicon-express-original"></i>
+                                </div>
+                            </div>
                             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
                         </div>
                         <div class="card" onclick="this.classList.toggle('expanded')">
-                                <!-- <figure class="first-project-photo-wrap"> -->
                                 <img class="second-project-photo" src="images/ttails.gif">
-                                <p>Traveling Tails</p>
+                                <h1 class="second-project-title">Traveling Tails</h1>
+                                <div class="extend-wrap">
+                                    <p class="project-paragraph">Optimizes traveling with one's dogs. Giving the user the option to </p>
+                                    <div class="project-link-wrap">
+                                        <p class="project-link"><a href="https://github.com/LizAitken/RefactorTT">View on GitHub</a></p>
+                                        <p class="project-link"><a href="http://ec2-52-14-218-146.us-east-2.compute.amazonaws.com/travelingTails.html">Live Site</a></p>
+                                    </div>
+                                    <div class="project-icons">
+                                        <i id="js-icon" class="devicon-javascript-plain"></i>
+                                        <i id="css-icon" class="devicon-css3-plain"></i>
+                                        <i id="html-icon" class="devicon-html5-plain"></i>
+                                    </div>
+                                </div>
                                 <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
                         </div>
                         <div class="card" onclick="this.classList.toggle('expanded')">
-                                <!-- <figure class="first-project-photo-wrap"> -->
                             <img class="third-project-photo" src="images/1_game_backgroundREDO.png">
-                            <p>Dangerous Diving</p>
+                            <h1 class="first-project-title">Dangerous Diving</h1>
+                            <div class="extend-wrap">
+                                <p class="project-paragraph">Application created in order to optimize the organization of a non-profit that aids kids with school supplies.</p>
+                                <p class="project-link"><a href="https://github.com/LizAitken/DangerousDiving">View on GitHub</a></p>
+                                <div class="project-icons">
+                                    <i id="python-icon" class="devicon-python-plain"></i>
+                                </div>
+                            </div>
                             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
                         </div>
-                            <!-- </figure> -->
-                    <!-- <div class="first-project-text-wrap">
-                        <h2 class="all-project-title">SCP Organizational App</h2>
-                        <ul class="first-project-list">
-                            <li class="first-project-item">Our app is a tool built specifically for a non-profit called Sponsored Children Project.I</li>
-                            <li class="first-project-item">These are the things we used to build it.</li>
-                            <li class="first-project-item">These are links right here</li>
-                        </ul>
-                    </div> -->
                 </div>
-                <!-- <div class="second-project-wrap">
-                        <figure class="second-project-photo-wrap">
-                            <img class="second-project-photo" src="images/ttails.gif">
-                        </figure>
-                        <div class="second-project-text-wrap">
-                            <h2 class="all-project-title">Traveling Tails</h2>
-                            <ul class="second-project-list">
-                                <li class="second-project-item">Description of application.</li>
-                                <li class="second-project-item">These are the things we used to build it.</li>
-                                <li class="second-project-item">These are links right here</li>
-                            </ul>
-                        </div>
-                </div>
-                <div class="third-project-wrap">
-                        <figure class="third-project-photo-wrap">
-                            <img class="third-project-photo" src="images/1_game_backgroundREDO.png">
-                        </figure>
-                        <div class="third-project-text-wrap">
-                            <h2 class="all-project-title">Dangerous Diving</h2>
-                            <ul class="third-project-list">
-                                <li class="third-project-item">Description of application.</li>
-                                <li class="third-project-item">These are the things we used to build it.</li>
-                                <li class="third-project-item">These are links right here</li>
-                            </ul>
-                        </div>
-                </div> -->
             </section>
             <section class="skills-sec">
-                    <h2 id="skills" class="skills-title">Software Development Skills</h2>
-                    <div class="skills-one-wrap">
-                        <i class="devicon-javascript-plain"></i>
-                        <i class="devicon-html5-plain"></i>
-                        <i class="devicon-postgresql-plain"></i>
-                        <i class="devicon-express-original"></i>
-                        <i class="devicon-mocha-plain"></i>
-                    </div>
-                    <div class="skills-two-wrap">
-                        <i class="devicon-nodejs-plain-wordmark"></i>
-                        <i class="devicon-linux-plain"></i>
-                        <i class="devicon-bootstrap-plain"></i>
-                        <i class="devicon-git-plain"></i>
-                        <i class="devicon-amazonwebservices-original"></i>
-                    </div>
+                <div class="all-skills-wrap">
+                        <h2 id="skills" class="skills-title">Software Development Skills</h2>
+                        <div class="skills-one-wrap">
+                            <i class="devicon-javascript-plain"></i>
+                            <i class="devicon-html5-plain"></i>
+                            <i class="devicon-css3-plain"></i>
+                            <i class="devicon-postgresql-plain"></i>
+                            <i class="devicon-express-original"></i>
+                            <i class="devicon-mocha-plain"></i>
+                        </div>
+                        <div class="skills-two-wrap">
+                            <i class="devicon-python-plain"></i>
+                            <i class="devicon-nodejs-plain-wordmark"></i>
+                            <i class="devicon-linux-plain"></i>
+                            <i class="devicon-bootstrap-plain"></i>
+                            <i class="devicon-git-plain"></i>
+                            <i class="devicon-amazonwebservices-original"></i>
+                        </div>
+                </div>
             </section>
             <section class="contact-sec">
                 <h2 id="contact" class="contact-title">Contact Me</h2>
