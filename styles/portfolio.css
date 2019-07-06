@@ -30,14 +30,16 @@ body {
   
 .nav-wrapper {
     margin: 0;
-    padding: .6rem;
+    padding: .3rem;
     display: flex;
     justify-content: space-between;
-    /* margin: 1rem; */
-    /* position: -webkit-sticky;
-    position: sticky; */
+    /* margin: 1rem;  */
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
-    background: linear-gradient(white, transparent);
+    background-color: peachpuff;
+    border-bottom: 2px solid black;
+    /* background: linear-gradient(white, transparent); */
 }
 
 
@@ -50,14 +52,14 @@ body {
 }
 
 .home-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: .25rem;
 }
 
 .nav-text {
     padding: 0 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     letter-spacing: .25rem;
 }
 
@@ -65,9 +67,10 @@ body {
     text-decoration: none;
     color: black;
 }
+
 .nav-text:hover, .home-text:hover {
-    opacity: .5;
     background-color: #4FB3B3;
+    border-radius: 8px;
 } 
 
 .main-intro-sec {
@@ -389,6 +392,12 @@ body {
 .about-text {
    text-align: center;
    font-size: 1.2rem;
+}
+
+.about-text a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
 }
 
 hr {
