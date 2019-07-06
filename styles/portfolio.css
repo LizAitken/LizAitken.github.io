@@ -202,7 +202,7 @@
     }
     
     .card.expanded {
-        height: 640px;
+        height: 670px;
     }
     
     .first-project-title {
@@ -677,7 +677,7 @@
     }
     
     .card.expanded {
-        height: 640px;
+        height: 670px;
     }
     
     .first-project-title {
@@ -1145,7 +1145,7 @@
     }
     
     .card.expanded {
-        height: 640px;
+        height: 670px;
     }
     
     .first-project-title {
@@ -1158,17 +1158,6 @@
         margin: 20px 0 0 0;
         font-size: 20px;
         text-decoration: underline;
-    }
-    
-    .text1 {
-        clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
-        -webkit-clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
-        transition: clip-path 1000ms;
-    }
-    
-    .card.expanded .text1 {
-        clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
-        -webkit-clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
     }
     
     .arrow {
