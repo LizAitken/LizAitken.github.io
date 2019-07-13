@@ -435,8 +435,21 @@
         color: black;
     }
     
-    .git-link {
+    .git-link, .git-link-about {
         text-decoration: none;
+    }
+    
+    #git-link-about {
+        font-size: 3rem;
+        padding: .3rem;
+        text-decoration: none;
+        color: black;
+    }
+
+    .linkedin-icon-about {
+        width: 3.2rem;
+        height: 3.2rem;
+        margin: .1rem 0 0 0;
     }
     
     .linkedin-icon, .email-icon, .resume-icon {
@@ -445,7 +458,7 @@
         padding: .3rem;
     }
     
-    .devicon-github-plain:hover, .linkedin-icon:hover, .email-icon:hover, .resume-icon:hover {
+    .devicon-github-plain:hover, .linkedin-icon-about:hover,.linkedin-icon:hover, .email-icon:hover, .resume-icon:hover {
         opacity: .5;
     }
     
@@ -894,8 +907,21 @@
         color: black;
     }
     
-    .git-link {
+    .git-link, .git-link-about {
         text-decoration: none;
+    }
+    
+    #git-link-about {
+        font-size: 3rem;
+        padding: .3rem;
+        text-decoration: none;
+        color: black;
+    }
+
+    .linkedin-icon-about {
+        width: 3.2rem;
+        height: 3.2rem;
+        margin: .1rem 0 0 0;
     }
     
     .linkedin-icon, .email-icon, .resume-icon {
@@ -904,7 +930,7 @@
         padding: 1rem;
     }
     
-    .devicon-github-plain:hover, .linkedin-icon:hover, .email-icon:hover, .resume-icon:hover {
+    .devicon-github-plain:hover, .linkedin-icon-about:hover, .linkedin-icon:hover, .email-icon:hover, .resume-icon:hover {
         opacity: .5;
     }
     
@@ -1362,8 +1388,21 @@
         color: black;
     }
     
-    .git-link {
+    .git-link, .git-link-about {
         text-decoration: none;
+    }
+    
+    #git-link-about {
+        font-size: 3rem;
+        padding: .3rem;
+        text-decoration: none;
+        color: black;
+    }
+
+    .linkedin-icon-about {
+        width: 3.2rem;
+        height: 3.2rem;
+        margin: .1rem 0 0 0;
     }
     
     .linkedin-icon, .email-icon, .resume-icon {
@@ -1372,7 +1411,7 @@
         padding: 1rem;
     }
     
-    .devicon-github-plain:hover, .linkedin-icon:hover, .email-icon:hover, .resume-icon:hover {
+    .devicon-github-plain:hover, .linkedin-icon-about:hover, .linkedin-icon:hover, .email-icon:hover, .resume-icon:hover {
         opacity: .5;
     }
     
