@@ -1,3 +1,7 @@
+.construction-title {
+    font-size: 3.5rem;
+    padding: 4rem 0;
+}
 
 @-ms-viewport{
     width: device-width;
@@ -81,20 +85,17 @@
     } 
     
     .main-intro-sec {
-        background: url(../images/edan-cohen-Imo0mgQsIsQ-unsplash.jpg);
-        /* margin: 5rem 0 4rem 0; */
-        /* -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 81%, 0 200%);
-        clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);   */
-        background-size: cover;
-        background-position: bottom left; 
+        background-color: #4FB3B3 ;
         margin: 0 0 2rem 0;
+        border-radius: 50%;
+        border: 5px black solid;
     }
        
     .intro-photo {
        display: none;
     }
     
-    .title-wrap {
+    .construction-title {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -561,13 +562,10 @@
     } 
     
     .main-intro-sec {
-        background: url(../images/edan-cohen-Imo0mgQsIsQ-unsplash.jpg);
-        /* margin: 5rem 0 4rem 0; */
-        /* -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 81%, 0 200%);
-        clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);   */
-        background-size: cover;
-        background-position: bottom left; 
+        background-color: #4FB3B3 ;
         margin: 0 0 2rem 0;
+        border-radius: 50%;
+        border: 5px black solid;
     }
     
     .intro-wrap {
@@ -1045,13 +1043,10 @@
     } 
     
     .main-intro-sec {
-        background: url(../images/edan-cohen-Imo0mgQsIsQ-unsplash.jpg);
-        /* margin: 5rem 0 4rem 0; */
-        /* -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 81%, 0 200%);
-        clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);   */
-        background-size: cover;
-        background-position: bottom left; 
+        background-color: #4FB3B3 ;
         margin: 0 0 2rem 0;
+        border-radius: 50%;
+        border: 5px black solid;
     }
     
     .intro-wrap {
